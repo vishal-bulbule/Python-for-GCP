@@ -1,5 +1,7 @@
 from google.cloud import compute_v1
 
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "key.json"
+
 INSTANCE_NAME = 'my-new-instance'
 MACHINE_TYPE = 'zones/us-central1-a/machineTypes/n1-standard-1'
 SUBNETWORK = 'regions/us-central1/subnetworks/default'
